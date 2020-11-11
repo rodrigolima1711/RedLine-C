@@ -28,8 +28,12 @@ namespace RedLine_C
 
         public static void Limpar()
         {
-             string.Empty;
-            
+            nome_pac = string.Empty;
+            dtNasc = string.Empty;
+            num_cart = string.Empty;
+            rg = string.Empty;
+            cpf = string.Empty;
+            situ = string.Empty;
         }
 
         public static String GetUsuario()

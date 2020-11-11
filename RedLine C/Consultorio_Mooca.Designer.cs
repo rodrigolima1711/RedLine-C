@@ -41,7 +41,6 @@
             this.TxtNumCart.Name = "TxtNumCart";
             this.TxtNumCart.Size = new System.Drawing.Size(189, 20);
             this.TxtNumCart.TabIndex = 0;
-            this.TxtNumCart.TextChanged += new System.EventHandler(this.TxtNumCart_TextChanged);
             // 
             // label1
             // 

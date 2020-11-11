@@ -64,10 +64,5 @@ namespace RedLine_C
         {
 
         }
-
-        private void TxtNumCart_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
