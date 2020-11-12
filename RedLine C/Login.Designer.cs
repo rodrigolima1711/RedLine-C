@@ -61,6 +61,7 @@ namespace RedLine_C
             // 
             // TxtLogin
             // 
+            this.TxtLogin.AcceptsReturn = true;
             this.TxtLogin.Location = new System.Drawing.Point(51, 53);
             this.TxtLogin.Name = "TxtLogin";
             this.TxtLogin.Size = new System.Drawing.Size(153, 20);

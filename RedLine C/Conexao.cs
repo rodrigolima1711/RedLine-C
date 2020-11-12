@@ -7,19 +7,24 @@ using MySql.Data.MySqlClient;
 
 namespace RedLine_C
 {
-    class Conexao
+    public static class Conexao
     {
         
 
-        public MySqlConnection cn = new MySqlConnection();
+        public static MySqlConnection cn = new MySqlConnection();
 
-        public void Conectar()
+        public static MySqlCommand Conectar()
         {
-            cn.ConnectionString = "server=localhost;User Id=root;database=bd_cadastro; password=";
+            cn.ConnectionString = "server=10.91.43.21;User Id=root;database=bd_cadastro; password=@senac";
+            //cn.ConnectionString = "server=localhost;User Id=root;database=bd_cadastro; password=";
             cn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = cn;
+
+            return cmd;
         }
 
-        public void Desconectar()
+        public static void Desconectar()
         {
             cn.Close();
         }

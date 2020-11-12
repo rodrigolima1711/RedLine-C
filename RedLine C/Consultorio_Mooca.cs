@@ -9,16 +9,22 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using RedLine_C;
 
 namespace RedLine_C
 {
     public partial class Consultorio_Mooca : Form
     {
+        Thread pac;
         public Consultorio_Mooca()
         {
             InitializeComponent();
         }
 
+        private void VerPac()
+        {
+            Application.Run(new ViewPaciente());
+        }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -44,9 +50,13 @@ namespace RedLine_C
 
             if (de.Read())
             {
-                Paciente.Procurar(de["nome_pac"].ToString(), de["dtNasc"].ToString(), de["num_cart"].ToString(), de["rg"].ToString(), de["cpf"].ToString(), de["situacao"].ToString());
+                this.Close();
+                pac = new Thread(VerPac);
+                pac.SetApartmentState(ApartmentState.STA);
+                pac.Start();
+                //Paciente.Procurar(de["nome_pac"].ToString(), de["dtNasc"].ToString(), de["num_cart"].ToString(), de["rg"].ToString(), de["cpf"].ToString(), de["situacao"].ToString());
 
-                MessageBox.Show(Paciente.GetUsuario());
+                //MessageBox.Show(Paciente.GetUsuario());
             }
             else
             {
@@ -61,6 +71,16 @@ namespace RedLine_C
         }
 
         private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNumCart_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Consultorio_Mooca_Load(object sender, EventArgs e)
         {
 
         }

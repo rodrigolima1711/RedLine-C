@@ -41,6 +41,7 @@
             this.TxtNumCart.Name = "TxtNumCart";
             this.TxtNumCart.Size = new System.Drawing.Size(189, 20);
             this.TxtNumCart.TabIndex = 0;
+            this.TxtNumCart.TextChanged += new System.EventHandler(this.TxtNumCart_TextChanged);
             // 
             // label1
             // 
@@ -97,6 +98,7 @@
             this.Controls.Add(this.TxtNumCart);
             this.Name = "Consultorio_Mooca";
             this.Text = "Consultorio_Mooca";
+            this.Load += new System.EventHandler(this.Consultorio_Mooca_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
