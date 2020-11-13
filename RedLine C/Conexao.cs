@@ -15,7 +15,7 @@ namespace RedLine_C
 
         public static MySqlCommand Conectar()
         {
-            cn.ConnectionString = "server=10.91.43.21;User Id=root;database=bd_cadastro; password=@senac";
+            cn.ConnectionString = "server=10.91.43.20;User Id=root;database=bd_cadastro; password=@senac";
             //cn.ConnectionString = "server=localhost;User Id=root;database=bd_cadastro; password=";
             cn.Open();
             MySqlCommand cmd = new MySqlCommand();
