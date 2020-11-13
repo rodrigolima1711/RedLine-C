@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultorio_Mooca));
             this.TxtNumCart = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnVerificar = new System.Windows.Forms.Button();
@@ -96,6 +97,7 @@
             this.Controls.Add(this.BtnVerificar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtNumCart);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consultorio_Mooca";
             this.Text = "Consultorio_Mooca";
             this.Load += new System.EventHandler(this.Consultorio_Mooca_Load);
