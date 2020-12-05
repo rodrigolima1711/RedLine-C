@@ -32,13 +32,12 @@
             this.TxtNumCart = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnVerificar = new System.Windows.Forms.Button();
-            this.BtnLimpa = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TxtNumCart
             // 
-            this.TxtNumCart.Location = new System.Drawing.Point(341, 48);
+            this.TxtNumCart.Location = new System.Drawing.Point(303, 95);
             this.TxtNumCart.Name = "TxtNumCart";
             this.TxtNumCart.Size = new System.Drawing.Size(189, 20);
             this.TxtNumCart.TabIndex = 0;
@@ -48,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(141, 48);
+            this.label1.Location = new System.Drawing.Point(103, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 20);
             this.label1.TabIndex = 5;
@@ -56,31 +55,22 @@
             // 
             // BtnVerificar
             // 
+            this.BtnVerificar.BackColor = System.Drawing.Color.Red;
             this.BtnVerificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVerificar.Location = new System.Drawing.Point(194, 91);
+            this.BtnVerificar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnVerificar.Location = new System.Drawing.Point(245, 143);
             this.BtnVerificar.Name = "BtnVerificar";
             this.BtnVerificar.Size = new System.Drawing.Size(141, 56);
             this.BtnVerificar.TabIndex = 14;
             this.BtnVerificar.Text = "Verificar";
-            this.BtnVerificar.UseVisualStyleBackColor = true;
+            this.BtnVerificar.UseVisualStyleBackColor = false;
             this.BtnVerificar.Click += new System.EventHandler(this.BtnVerificar_Click);
-            // 
-            // BtnLimpa
-            // 
-            this.BtnLimpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLimpa.Location = new System.Drawing.Point(359, 91);
-            this.BtnLimpa.Name = "BtnLimpa";
-            this.BtnLimpa.Size = new System.Drawing.Size(141, 56);
-            this.BtnLimpa.TabIndex = 15;
-            this.BtnLimpa.Text = "Limpar";
-            this.BtnLimpa.UseVisualStyleBackColor = true;
-            this.BtnLimpa.Click += new System.EventHandler(this.BtnLimpa_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(50, 9);
+            this.label10.Location = new System.Drawing.Point(12, 56);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(587, 20);
             this.label10.TabIndex = 16;
@@ -91,9 +81,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 280);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(609, 257);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.BtnLimpa);
             this.Controls.Add(this.BtnVerificar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtNumCart);
@@ -111,7 +101,6 @@
         private System.Windows.Forms.TextBox TxtNumCart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnVerificar;
-        private System.Windows.Forms.Button BtnLimpa;
         private System.Windows.Forms.Label label10;
     }
 }

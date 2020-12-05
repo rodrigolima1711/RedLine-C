@@ -15,7 +15,7 @@ namespace RedLine_C
 {
     public partial class Consultorio_Mooca : Form
     {
-        Thread pac;
+        //Thread pac;
         public Consultorio_Mooca()
         {
             InitializeComponent();
@@ -39,10 +39,7 @@ namespace RedLine_C
 
             MySqlCommand cmd = new MySqlCommand(query, conexao.cn);
 
-            //cmd.Parameters.AddWithValue("@nome_pac", TxtNome.Text);
-            //cmd.Parameters.AddWithValue("@cpf", TxtCPF.Text);
-            //cmd.Parameters.AddWithValue("@rg", TxtRG.Text);
-            //cmd.Parameters.AddWithValue("@dtNasc", TxtDtn.Text);
+            
             cmd.Parameters.AddWithValue("@num_cart", TxtNumCart.Text);
 
 
@@ -50,13 +47,13 @@ namespace RedLine_C
 
             if (de.Read())
             {
-                this.Close();
-                pac = new Thread(VerPac);
-                pac.SetApartmentState(ApartmentState.STA);
-                pac.Start();
-                //Paciente.Procurar(de["nome_pac"].ToString(), de["dtNasc"].ToString(), de["num_cart"].ToString(), de["rg"].ToString(), de["cpf"].ToString(), de["situacao"].ToString());
+                //this.Close();
+                //pac = new Thread(VerPac);
+                //pac.SetApartmentState(ApartmentState.STA);
+                //pac.Start();
+                Paciente.Procurar(de["nome_pac"].ToString(), de["dtNasc"].ToString(), de["num_cart"].ToString(), de["rg"].ToString(), de["cpf"].ToString(), de["situacao"].ToString());
 
-                //MessageBox.Show(Paciente.GetUsuario());
+                MessageBox.Show(Paciente.GetUsuario(), Text,MessageBoxButtons.OK);
             }
             else
             {
