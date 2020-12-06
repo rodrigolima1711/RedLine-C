@@ -78,6 +78,7 @@ namespace RedLine_C
             this.TxtSenha.PasswordChar = '*';
             this.TxtSenha.Size = new System.Drawing.Size(386, 20);
             this.TxtSenha.TabIndex = 16;
+            this.TxtSenha.TextChanged += new System.EventHandler(this.TxtSenha_TextChanged_1);
             // 
             // BtnEntrar
             // 

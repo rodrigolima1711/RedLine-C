@@ -91,6 +91,11 @@ namespace RedLine_C
                 nt.Start();
             }
         }
+
+        private void TxtSenha_TextChanged_1(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 

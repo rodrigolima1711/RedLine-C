@@ -16,7 +16,8 @@ namespace RedLine_C
         public void Conectar()
         {
             //cn.ConnectionString = "server=localhost;User Id=root;database=bd_cadastro; password=";
-            cn.ConnectionString = "server=mysql741.umbler.com;User Id=iguulima1711;database=bd_cadastro;password=loki1711;port=41890";
+            //cn.ConnectionString = "server=mysql741.umbler.com;User Id=iguulima1711;database=bd_cadastro;password=loki1711;port=41890";
+            cn.ConnectionString = "server=sql10.freemysqlhosting.net;User Id=sql10380496;database=sql10380496;password=8xaKqr6Z9A;port=3306";
             cn.Open();
         }
 

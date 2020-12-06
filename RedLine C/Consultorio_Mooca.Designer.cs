@@ -37,6 +37,7 @@
             // 
             // TxtNumCart
             // 
+            this.TxtNumCart.AcceptsReturn = true;
             this.TxtNumCart.Location = new System.Drawing.Point(303, 95);
             this.TxtNumCart.Name = "TxtNumCart";
             this.TxtNumCart.Size = new System.Drawing.Size(189, 20);
